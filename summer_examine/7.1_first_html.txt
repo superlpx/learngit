@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>网页制作三剑客、Dreamworks，flash、fireworks</title>
+<!--<meta http-equiv="refresh" content="3; url= https://www.bilibili.com">-->
+<meta name="keywords" http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+欢迎使用HTML语言
+<hr>
+<font size="6" color="red">欢迎使用HTML语言</font>
+</body>
+</html>

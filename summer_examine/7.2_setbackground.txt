@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>The article of page and background color set</title>
+</head>
+<!--设置背景和文字颜色-->
+<body bgcolor="white" text="black">
+    <h1>define the background of page as dark blue, text are white</h1>
+</body>
+</html>

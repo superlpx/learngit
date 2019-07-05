@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置网页链接文字颜色和边距</title>
+</head>
+<body link="red" alink="blue" vlink="#ffc0cb" leftmargin="30" topmargin="50">
+    <h2>设定不同的链接颜色</h2>
+    <img src="61.png">
+    <p><a href="https://www.baidu.com">链接颜色</a> </p>
+        <a href="https://www.bilibili.com">链接颜色</a>
+    <p><a href="https://www.microsoft.com">链接颜色</a> </p>
+</body>
+</html>
