@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML和CSS初次使用</title>
+</head>
+<style>
+    h2{
+        color: red;
+    }
+    body{
+        margin: 10px 0 0 50px;
+    }
+    p{
+        background: aqua;
+        border: 100px;
+    }
+    ul{
+        padding: 20px 0 20px 0;
+    }
+</style>
+<body>
+    <h2>HTML和CSS的功能体现</h2>
+    <p><strong>HTML有以下功能</strong></p>
+            <ul>
+                <li>可以呈现你想要的文字内容</li>
+                <li>可以为文字附上链接</li>
+                <li>可以插入图片</li>
+            </ul>
+    <p><strong>CSS有以下功能</strong></p>
+            <ul>
+                <li>将你所呈现的内容进行排版</li>
+                <li>可以为某一文字段落区域进行填充</li>
+                <li>可以设置行边距</li>
+            </ul>
+</body>
+</html>
