@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web_layout</title>
+</head>
+    <style>
+        body{
+            background: gray;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: black;
+            color: white;
+            padding: 20px 40px 10px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            margin: 0 20px 0 0;
+        }
+        section{
+            background: aqua;
+            color: gray;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: row;
+        }
+        div{
+            background: white;
+            width: 100px;
+            margin: auto;
+        }
+        footer{
+            background: pink;
+            padding: 10px 40px;
+        }
+    </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>location</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <h1>Title</h1>
+    </header>
+    <section>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
+    <section>section2</section>
+    <footer>footer</footer>
+</body>
+</html>
