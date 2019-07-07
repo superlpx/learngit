@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web_layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="web_layout.html">Home</a></li>
+                <li><a href="location.html">location</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+    </header>
+    <section>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
+    <section>section2</section>
+    <footer>footer</footer>
+</body>
+</html>
+
+body{
+    background: gray;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: black;
+    color: white;
+    padding: 20px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+section{
+    background: aqua;
+    color: gray;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+}
+div{
+    background: pink;
+    width: 100px;
+    margin: auto;
+}
+footer{
+    background: pink;
+    padding: 10px 40px;
+}
