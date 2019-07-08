@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css选择器和class 伪类的使用</title>
+</head>
+<style>
+    header{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        background: deeppink;
+    }
+    ul{
+        display: inline-block;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        background: red;
+        display: inline-block;
+        color: aqua;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    li:first-child{
+        margin-left: 0;
+    }
+    section{
+        background: pink;
+        margin: auto;
+        flex-direction: row;
+
+    }
+    div{
+        background: white;
+        display: inline-block;
+        margin: 3px;
+        padding: 10px;
+    }
+    .div-info.first{
+        background: aqua;
+    }
+    .div-info div{
+        background: lawngreen;
+    }
+    .div-info div:first-child{
+        margin-left: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="web_layout.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="div-info first">
+    <div>section a</div>
+    <div>section b</div>
+    <div>section c</div>
+</section>
+<section class="div-info second">
+    <div>section d</div>
+    <div>section e</div>
+</section>
+</body>
+</html>
