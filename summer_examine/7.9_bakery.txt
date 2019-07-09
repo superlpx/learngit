@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My bakery</title>
+</head>
+<link rel="stylesheet" href="bakery_style.css">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="bakery.html">Home</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li class="feature"><a href="bakery.html">My bakery home</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+        <figure>
+            <img src="bread1.jpg" alt="amazing fresh baked bread">
+            <figcaption>Fresh-Bake-Bread</figcaption>
+        </figure>
+        <figure>
+            <img src="bread2.jpg" alt="amazing fresh baked loaf">
+            <figcaption>Home-Roast-loaf</figcaption>
+        </figure>
+        <figure class="cc">
+            <img src="coffe.jpg" alt="amazing fresh coffee">
+            <figcaption>Home-Roast-Coffee</figcaption>
+        </figure>
+    </section>
+    <footer>Contact us by calling 555-555-5555</footer>
+
+</body>
+</html>
