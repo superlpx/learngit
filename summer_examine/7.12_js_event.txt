@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求和</title>
+</head>
+<link rel="stylesheet" href="add_sum_css.css">
+<body>
+    <main>
+        <h1>欢迎来到此页面，我们将为您求任意两数的和！</h1>
+        <p>
+            <input id="numOne"> + <input id="numTwo">
+        </p>
+        <figure id="result"></figure>
+        <script src="add_sum_js.js"></script>
+    </main>
+</body>
+</html>
+
+
+var a, b, sum;
+a = document.getElementById("numOne");
+b = document.getElementById("numTwo");
+sum = document.getElementById("result");
+function add(){
+    var one = parseFloat(a.value) || 0;
+    var two = parseFloat(b.value) || 0;
+    sum.innerHTML ="the sum is: " + (one + two);
+}
+a.addEventListener("input",add);
+b.addEventListener("input", add);
+
+h1{
+    text-align: center;
+}
+p{
+
+    flex-direction: row;
+    text-align: center;
+}
+body{
+    text-align: center;
+}
