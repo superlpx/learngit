@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Òþ²ØÍ¼Æ¬</title>
+</head>
+<link rel="stylesheet" href="hide_img.css">
+<body>
+    <header>JS Programing Practice</header>
+    <ul>
+        <li><a data-img="cake1-pic" id="cake1" href="#">cake_1</a></li>
+        <li><a data-img="cake2-pic" id="cake2" href="#">cake_2</a></li>
+        <li><a data-img="coffee-pic" id="coffee" href="#">coffee</a></li>
+    </ul>
+    <img class="hide" id="cake1-pic" src="cake1.jpg" alt="">
+    <img class="hide" id="cake2-pic" src="cake2.jpg" alt="">
+    <img class="hide" id="coffee-pic" src="coffee.jpg" alt="">
+    <script src="hide_img.js"></script>
+</body>
+</html>
+
+
+h1{
+    text-align: center;
+}
+p{
+
+    flex-direction: row;
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+
+var cake1=document.getElementById("cake1");
+var cake2=document.getElementById("cake2");
+var coffee=document.getElementById("coffee");
+
+cake1.addEventListener("click",pic);
+cake2.addEventListener("click",pic);
+coffee.addEventListener("click",pic);
+
+
+function pic() {
+    var allimgs = document.querySelectorAll("img");
+    for (var i = 0; i < allimgs.length; i++)
+    {
+        allimgs[i].className="hide";
+    }
+    var picid = this.attributes["data-img"].value;
+    var picshow = document.getElementById(picid);
+    if(picshow.className === "hide")
+    {
+        picshow.className = "" ;
+    }
+    else
+    {
+        picshow.className = "hide";
+    }
+
+}
+
