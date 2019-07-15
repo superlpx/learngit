@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ÃÌº” ‰»ÎøÚ</title>
+</head>
+<style>
+    body{
+        padding: 0 30%;
+        margin: 0;
+        text-align: center;
+    }
+    li input{
+        display: none;
+    }
+    li.edit span{
+        display: none;
+    }
+    li.edit input{
+        display: initial;
+    }
+</style>
+<body>
+    <header>
+        <h1>JS Programing Add Event Listener</h1>
+    </header>
+    <ul id="checklist">
+        <li>
+            <span>Apple</span>
+            <input value="Apples">
+        </li>
+        <li>
+            <span>Melon</span>
+            <input value="Melon">
+        </li>
+        <li>
+            <span>Bananas</span>
+            <input value="Bananas">
+        </li>
+    </ul>
+<script src="add_input.js"></script>
+</body>
+</html>
+
+
+var checklist = document.getElementById("checklist");
+var items = checklist.querySelectorAll("li");
+var inputs = checklist.querySelectorAll("input");
+
+for(var i = 0; i < items.length; i++)
+{
+    items[i].addEventListener("click",editItem);
+    inputs[i].addEventListener("blur", updata);
+    inputs[i].addEventListener("keypress", Keypress);
+}
+
+function editItem() {
+    this.className = "edit";
+    var input = this.querySelector("input");
+    input.focus();
+
+    input.setSelectionRange(0,input.value.length);
+
+}
+
+function updata() {
+    this.previousElementSibling.innerHTML = this.value;
+    this.parentNode.className = "";
+}
+
+function Keypress(event) {
+    if(event.which === 13)
+    {
+        updata.call(this);
+    }
+}
+
+
