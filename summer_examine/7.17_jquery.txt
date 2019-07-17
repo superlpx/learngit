@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ê¹ÓÃJqueryÄ£¿é</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    header{
+        background-color: gray;
+        text-align: center;
+    }
+    .nav div{
+        display: inline-block;
+        flex-direction: row;
+        font-weight: bolder;
+    }
+    .context{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 50px;
+    }
+    .title{
+        background-color: aqua;
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+
+    }
+    .text{
+        background-color: gray;
+        padding: 10px;
+    }
+
+</style>
+<body>
+    <header>
+        <h2>Let's Have Fun!</h2>
+        <div class="nav">
+            <button>#btn1</button>
+            <button>#btn2</button>
+            <button>#btn3</button>
+            <button>#btn4</button>
+        </div>
+    </header>
+    <div class="context">
+        <div class="title" id="btn1">
+            #btn1
+            <div class="text">
+                content
+            </div>
+        </div>
+        <div class="title" id="btn2">
+            #btn2
+            <div class="text">
+                content
+            </div>
+        </div>
+        <div class="title" id="btn3">
+            #btn3
+            <div class="text">
+                content
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+       $("#btn1").fadeToggle(1000).fadeToggle(1000);
+       $("#btn2").hide(300).show(300).hide(300).show(300);
+       $("#btn3").slideUp(1000).slideDown(1000);
+    });
+</script>
+</html>
